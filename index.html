@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <!-- Fonts -->
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -13,7 +12,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,14 +20,15 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header class="header-box">
       <div class="container header-container">
         <nav class="header-navigation">
-          <a href="./index.html" class="logo">
-            Web<span class="logo-accent">Studio</span></a
+          <a href="./index.html" class="logo"
+            >Web<span class="logo-header">Studio</span></a
           >
-          <ul class="page-nav">
+          <ul class="page-navigation">
             <li><a href="./index.html" class="link current">Studio</a></li>
             <li><a href="" class="link">Portfolio</a></li>
             <li><a href="" class="link">Contacts</a></li>
@@ -37,13 +36,13 @@
         </nav>
         <address class="style">
           <ul class="contact-list">
-            <li class="contact-blok">
-              <a class="contact-link" href="mailto:info@devstudio.com"
+            <li class="contact-block">
+              <a href="mailto:info@devstudio.com" class="contact"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="contact-blok">
-              <a class="contact-link" href="tel:+110001111111"
+            <li class="contact-block">
+              <a href="tel:+110001111111" class="contact"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -138,64 +137,65 @@
         </div>
       </div>
     </header>
+
     <main>
       <!-- Hero section -->
-      <section class="hero-section">
+      <section class="section-title">
         <div class="container hero-container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <h1 class="page-title">Effective Solutions for Your Business</h1>
           <button type="button" class="page-btn" data-modal-open>
             Order Service
           </button>
         </div>
       </section>
-      <!-- Our advantages -->
-      <section class="advantages-box">
-        <div class="container advantages-container">
-          <h2 class="studio-hidden visually-hidden">Our advantages</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item">
+      <!-- Our benefits -->
+      <section class="benefits-box">
+        <div class="container benefits-container">
+          <h2 class="studio-hidden visually-hidden">Benefits</h2>
+          <ul class="benefits-list">
+            <li class="benefits-item">
               <div class="box-icon">
-                <svg class="advantages-icon" width="64" height="64">
+                <svg class="benefits-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="studio-list">Strategy</h3>
+              <h3 class="studio-benefits">Strategy</h3>
               <p class="text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="benefits-item">
               <div class="box-icon">
-                <svg class="advantages-icon" width="64" height="64">
+                <svg class="benefits-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="studio-list">Punctuality</h3>
+              <h3 class="studio-benefits">Punctuality</h3>
               <p class="text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="benefits-item">
               <div class="box-icon">
-                <svg class="advantages-icon" width="64" height="64">
+                <svg class="benefits-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="studio-list">Diligence</h3>
+              <h3 class="studio-benefits">Diligence</h3>
               <p class="text">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
             </li>
-            <li class="advantages-item">
+            <li class="benefits-item">
               <div class="box-icon">
-                <svg class="advantages-icon" width="64" height="64">
+                <svg class="benefits-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="studio-list">Technologies</h3>
+              <h3 class="studio-benefits">Technologies</h3>
               <p class="text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -207,14 +207,17 @@
       <!-- Our team -->
       <section class="section-team">
         <div class="container team-container">
-          <h2 class="section-title">Our team</h2>
+          <h2 class="studio">Our Team</h2>
           <ul class="team-list">
             <li class="card">
               <img
-                srcset="./images/mark.jpg 1x, ./images/img-1-2x.jpg 2x"
-                src="./images/mark.jpg"
-                alt="Portrait of Mark Guerrero"
+                srcset="
+                  ./images/webstudio/mark-guerrero.jpg 1x,
+                  ./images/webstudio/img-1-2x.jpg      2x
+                "
+                src="./images/webstudio/mark-guerrero.jpg"
                 width="264"
+                alt="Man with a beard"
               />
               <div class="card-text">
                 <h3 class="studio-list">Mark Guerrero</h3>
@@ -253,10 +256,13 @@
             </li>
             <li class="card">
               <img
-                srcset="./images/tom.jpg 1x, ./images/img-2-2x.jpg 2x"
-                src="./images/tom.jpg"
-                alt="Portrait of Tom Ford"
+                srcset="
+                  ./images/webstudio/tom-ford.jpg 1x,
+                  ./images/webstudio/img-2-2x.jpg 2x
+                "
+                src="./images/webstudio/tom-ford.jpg"
                 width="264"
+                alt="Smiling Man"
               />
               <div class="card-text">
                 <h3 class="studio-list">Tom Ford</h3>
@@ -295,10 +301,13 @@
             </li>
             <li class="card">
               <img
-                srcset="./images/camila.jpg 1x, ./images/img-3-2x.jpg 2x"
-                src="./images/camila.jpg"
-                alt="Portrait of Camila Garcia"
+                srcset="
+                  ./images/webstudio/camila-garcia.jpg 1x,
+                  ./images/webstudio/img-3-2x.jpg      2x
+                "
+                src="./images/webstudio/camila-garcia.jpg"
                 width="264"
+                alt="Beautiful women"
               />
               <div class="card-text">
                 <h3 class="studio-list">Camila Garcia</h3>
@@ -337,10 +346,13 @@
             </li>
             <li class="card">
               <img
-                srcset="./images/daniel.jpg 1x, ./images/img-4-2x.jpg 2x"
-                src="./images/daniel.jpg"
-                alt="Portrait of Daniel Wilson"
+                srcset="
+                  ./images/webstudio/daniel-wilson.jpg 1x,
+                  ./images/webstudio/img-4-2x.jpg      2x
+                "
+                src="./images/webstudio/daniel-wilson.jpg"
                 width="264"
+                alt="Smiling man with fasionable hairstyle"
               />
               <div class="card-text">
                 <h3 class="studio-list">Daniel Wilson</h3>
@@ -383,39 +395,38 @@
       <!-- portfolio -->
       <section class="studio-portfolio">
         <div class="container portfolio-container">
-          <h2 class="section-title">Our Portfolio</h2>
+          <h2 class="studio">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="post-box">
                 <picture>
                   <source
                     srcset="
-                      ./images/img-bank.jpg    1x,
-                      ./images/img-bank-2x.jpg 2x
+                      ./images/webstudio/img-bank.jpg    1x,
+                      ./images/webstudio/img-bank-2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/img-bank-tab.jpg    1x,
-                      ./images/img-bank-tab-2x.jpg 2x
+                      ./images/webstudio/img-bank-tab.jpg    1x,
+                      ./images/webstudio/img-bank-tab-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./images/img-bank-mob.jpg    1x,
-                      ./images/img-bank-mob-2x.jpg 2x
+                      ./images/webstudio/img-bank-mob.jpg    1x,
+                      ./images/webstudio/img-bank-mob-2x.jpg 2x
                     "
                     media="(max-width: 767px)"
                   />
                   <img
-                    src="./images/img-bank.jpg"
+                    src="./images/webstudio/img-bank.jpg"
                     alt="App Interface"
                     width="360"
                   />
                 </picture>
-
                 <p class="post-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -431,25 +442,28 @@
               <div class="post-box">
                 <picture>
                   <source
-                    srcset="./images/img-pay.jpg 1x, ./images/img-pay-2x.jpg 2x"
+                    srcset="
+                      ./images/webstudio/img-pay.jpg    1x,
+                      ./images/webstudio/img-pay-2x.jpg 2x
+                    "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/img-pay-tab.jpg    1x,
-                      ./images/img-pay-tab-2x.jpg 2x
+                      ./images/webstudio/img-pay-tab.jpg    1x,
+                      ./images/webstudio/img-pay-tab-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./images/img-pay-mob.jpg    1x,
-                      ./images/img-pay-mob-2x.jpg 2x
+                      ./images/webstudio/img-pay-mob.jpg    1x,
+                      ./images/webstudio/img-pay-mob-2x.jpg 2x
                     "
                     media="(max-width: 767px)"
                   />
                   <img
-                    src="./images/img-pay.jpg"
+                    src="./images/webstudio/img-pay.jpg"
                     alt="QR-touchpay"
                     width="360"
                   />
@@ -470,27 +484,27 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/img-meditation.jpg    1x,
-                      ./images/img-meditation-2x.jpg 2x
+                      ./images/webstudio/img-meditation.jpg    1x,
+                      ./images/webstudio/img-meditation-2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/img-meditation-tab.jpg    1x,
-                      ./images/img-meditation-tab-2x.jpg 2x
+                      ./images/webstudio/img-meditation-tab.jpg    1x,
+                      ./images/webstudio/img-meditation-tab-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./images/img-meditation-mob.jpg    1x,
-                      ./images/img-meditation-mob-2x.jpg 2x
+                      ./images/webstudio/img-meditation-mob.jpg    1x,
+                      ./images/webstudio/img-meditation-mob-2x.jpg 2x
                     "
                     media="(max-width: 767px)"
                   />
                   <img
-                    src="./images/img-meditation.jpg"
+                    src="./images/webstudio/img-meditation.jpg"
                     alt="Desktop and mobile screen"
                     width="360"
                   />
@@ -511,27 +525,27 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/img-taxi.jpg    1x,
-                      ./images/img-taxi-2x.jpg 2x
+                      ./images/webstudio/img-taxi.jpg    1x,
+                      ./images/webstudio/img-taxi-2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/img-taxi-tab.jpg    1x,
-                      ./images/img-taxi-tab-2x.jpg 2x
+                      ./images/webstudio/img-taxi-tab.jpg    1x,
+                      ./images/webstudio/img-taxi-tab-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./images/img-taxi-mob.jpg    1x,
-                      ./images/img-taxi-mob-2x.jpg 2x
+                      ./images/webstudio/img-taxi-mob.jpg    1x,
+                      ./images/webstudio/img-taxi-mob-2x.jpg 2x
                     "
                     media="(max-width: 767px)"
                   />
                   <img
-                    src="./images/img-taxi.jpg"
+                    src="./images/webstudio/img-taxi.jpg"
                     alt="Car interior"
                     width="360"
                   />
@@ -552,27 +566,27 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/img-screen.jpg    1x,
-                      ./images/img-screen-2x.jpg 2x
+                      ./images/webstudio/img-screen.jpg    1x,
+                      ./images/webstudio/img-screen-2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/img-screen-tab.jpg    1x,
-                      ./images/img-screen-tab-2x.jpg 2x
+                      ./images/webstudio/img-screen-tab.jpg    1x,
+                      ./images/webstudio/img-screen-tab-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./images/img-screen-mob.jpg    1x,
-                      ./images/img-screen-mob-2x.jpg 2x
+                      ./images/webstudio/img-screen-mob.jpg    1x,
+                      ./images/webstudio/img-screen-mob-2x.jpg 2x
                     "
                     media="(max-width: 767px)"
                   />
                   <img
-                    src="./images/img-screen.jpg"
+                    src="./images/webstudio/img-screen.jpg"
                     alt="Mobile background
                 image"
                     width="360"
@@ -585,7 +599,7 @@
                 </p>
               </div>
               <div class="portfolio-text">
-                <h3 class="studio-list">Screen Illustrations</h3>
+                <h3 class="studio-list-portfolio">Screen Illustrations</h3>
                 <p class="text">Design</p>
               </div>
             </li>
@@ -594,27 +608,27 @@
                 <picture>
                   <source
                     srcset="
-                      ./images/img-courses.jpg    1x,
-                      ./images/img-courses-2x.jpg 2x
+                      ./images/webstudio/img-courses.jpg    1x,
+                      ./images/webstudio/img-courses-2x.jpg 2x
                     "
                     media="(min-width: 1158px)"
                   />
                   <source
                     srcset="
-                      ./images/img-courses-tab.jpg    1x,
-                      ./images/img-courses-tab-2x.jpg 2x
+                      ./images/webstudio/img-courses-tab.jpg    1x,
+                      ./images/webstudio/img-courses-tab-2x.jpg 2x
                     "
                     media="(min-width: 768px)"
                   />
                   <source
                     srcset="
-                      ./images/img-courses-mob.jpg    1x,
-                      ./images/img-courses-mob-2x.jpg 2x
+                      ./images/webstudio/img-courses-mob.jpg    1x,
+                      ./images/webstudio/img-courses-mob-2x.jpg 2x
                     "
                     media="(max-width: 767px)"
                   />
                   <img
-                    src="./images/img-courses.jpg"
+                    src="./images/webstudio/img-courses.jpg"
                     alt="Smile woman"
                     width="360"
                   />
@@ -634,14 +648,12 @@
         </div>
       </section>
     </main>
-
     <!-- footer section -->
-
     <footer class="page-footer">
       <div class="container footer-container">
         <div class="logo-container">
-          <a href="./index.html" class="logo logo-footer"
-            >Web<span class="footer-logo">Studio</span></a
+          <a href="./index.html" class="logo logo-type"
+            >Web<span class="logo-footer">Studio</span></a
           >
           <p class="text-footer">
             Increase the flow of customers and sales for your business with
@@ -702,10 +714,8 @@
         </div>
       </div>
     </footer>
-
     <!-- modal -->
-
-    <div class="backdrop" data-modal>
+    <div class="modal-overlay" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="close-icon" width="8" height="8">
